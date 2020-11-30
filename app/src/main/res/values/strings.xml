@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ProjectOne</string>
+    <string name="login">LOGIN</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="enter_body">Enter body</string>
+
+</resources>

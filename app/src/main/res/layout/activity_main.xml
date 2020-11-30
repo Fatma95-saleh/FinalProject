@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="50dp"
+      />
+
+    <EditText
+        android:id="@+id/phoneId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Enter Your Number"
+        android:layout_marginTop="70dp"
+        android:drawableStart="@drawable/phone_icon"
+        android:padding="20dp"
+        android:paddingStart="0dp"
+        android:drawableLeft="@drawable/phone_icon"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:drawablePadding="10dp"
+        android:paddingLeft="0dp" />
+
+    <TextView
+        android:id="@+id/phoneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorPrimaryDark"
+        />
+    <EditText
+        android:id="@+id/passwordId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Enter Your Password"
+        android:layout_marginTop="20dp"
+        android:paddingStart="0dp"
+        android:drawableStart="@drawable/password_icon"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/phone_icon"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:drawablePadding="10dp"
+        android:paddingLeft="0dp" />
+    <TextView
+        android:id="@+id/passwordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+
+    <TextView
+        android:id="@+id/bothText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:layout_marginTop="50dp"
+       />
+
+
+
+
+
+
+    </LinearLayout>
+
