@@ -38,13 +38,13 @@ class LoginActivity : AppCompatActivity() {
             if(phoneId.isEmpty() && passwordId.isEmpty()){bothText.text="Phone Number and Password is Required"}
 
 //                    && passwordREGEX.matcher(passwordId).matches()
-         // if (phoneId.isNotEmpty()&& phoneId.length==11 && passwordId.isNotEmpty()&&passwordId.length==8 ){
+         if (phoneId.isNotEmpty()/*&& phoneId.length==11 */&& passwordId.isNotEmpty()/*&&passwordId.length==8 */){
               val data = data(phoneId.toString(),passwordId.toString())
           // val data = data("user@user.com","12345678")
 
-            login(data)
+             login(data)
 
-          //}
+         }
         }
     }
 

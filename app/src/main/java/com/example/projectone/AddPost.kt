@@ -3,6 +3,7 @@ package com.example.projectone
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import com.example.projectone.network.AddTitle
 import com.example.projectone.network.NetworkManager
 import com.example.projectone.network.NetworkManager.Companion.fetchData
@@ -28,6 +29,7 @@ class AddPost : AppCompatActivity() {
         addBtn.setOnClickListener {
 
             addPost(AddTitle(titleText.text.toString(),bodyText.text.toString()))
+            Toast.makeText(this,"New User is Added", Toast.LENGTH_LONG).show()
         }
 
     }

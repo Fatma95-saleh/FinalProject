@@ -3,6 +3,7 @@ package com.example.projectone
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.SyncStateContract.Helpers.update
+import android.widget.Toast
 import com.example.projectone.network.*
 import com.example.projectone.network.NetworkManager.Companion.fetchData
 import kotlinx.android.synthetic.main.activity_add_post.*
@@ -25,15 +26,16 @@ class UpdatePost : AppCompatActivity() {
         super.onStart()
         var textOne = intent?.extras?.getString("title")
         var textTwo = intent?.extras?.getString("body")
-
         titleText.setText(textOne)
         bodyText.setText(textTwo)
         var idPost = intent?.extras?.getString("idPost").toString()
 
         updateBtn.setOnClickListener {
 
-            updatePost(idPost, AddTitle(bodyText.text.toString(), titleText.text.toString()))
+            updatePost(idPost, AddTitle(titleText.text.toString(),bodyText.text.toString()))
+            Toast.makeText(this,"User is updatted",Toast.LENGTH_LONG).show()
         }
+
     }
         fun updatePost(id:String,AddTitle:AddTitle){
 
